@@ -17,7 +17,4 @@ Intelligent
 
 
 
-
-programmer:@plusbotteam
-
-
+made in iran
