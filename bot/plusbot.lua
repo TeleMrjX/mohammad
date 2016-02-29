@@ -229,22 +229,21 @@ function create_config( )
     sudo_users = {106164433,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
-not open git
-Admins
+    about_text = [[plusbot v2
+not copy
+sudo:
 @wqwq2112
 ]],
     help_text_realm = [[
 Realm Commands:
 !creategroup [Name]
-Create a group
+ساختن گروه
 !createrealm [Name]
-Create a realm
+ساختن ریلم
 !setname [Name]
-Set realm name
+تنظیم عکس ریلم
 !setabout [GroupID] [Text]
-Set a group's about text
+تنظیم توضیحات ریلم
 !setrules [GroupID] [Text]
 Set a group's rules
 !lock [GroupID] [setting]
@@ -284,73 +283,159 @@ This command will send text to [group_id]
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-Commands list :
-!kick [username|id]
-You can also do it by reply
-!ban [ username|id]
-You can also do it by reply
-!unban [id]
-You can also do it by reply
-!who
-Members list
-!modlist
-Moderators list
-!promote [username]
-Promote someone
-!demote [username]
-Demote someone
-!kickme
-Will kick user
-!about
-Group description
-!setphoto
-Set and locks group photo
-!setname [name]
-Set group name
-!rules
-Group rules
-!id
-return group id or user id
-!help
-!lock [member|name|bots|leave]	
-Locks [member|name|bots|leaveing] 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
-!set rules <text>
-Set <text> as rules
-!set about <text>
-Set <text> as about
-!settings
-Returns group settings
-!newlink
-create/revoke your group link
-!link
-returns group link
-!owner
-returns group owner id
-!setowner [id]
-Will set id as owner
-!setflood [value]
-Set [value] as flood sensitivity
-!stats
-Simple message statistics
-!save [value] <text>
-Save <text> as [value]
-!get [value]
-Returns text of [value]
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-!res [username]
-returns user id
-"!res @username"
-!log
-will return group logs
-!banlist
-will return group ban list
-**U can use both "/" and "!" 
-*Only owner and mods can add bots in group
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-*Only owner can use res,setowner,promote,demote and log commands
+پلاس بوت  @tele_plus_bot
+__________________________________
+لیست دستورات :
+__________________________________
+kick [username|id]
+اخراج فرد (با ریپلی هم میتوانید)
+__________________________________
+ban [ username|id]
+بن کردن فرد از گروه(با ریپلی هم میتوانید)
+__________________________________
+unban [id]
+آنبن کردن فرد (با ریپلی هم میتوانید)
+__________________________________
+who
+نماش لیست اعضا
+__________________________________
+modlist
+نمایش مدیران گروه
+__________________________________
+promote [username]
+مقام دادن به فرد مورد نظر
+__________________________________
+demote [username]
+خلع مقام کردن فرد مورد نظر
+__________________________________
+kickme
+خروج از گروه
+__________________________________
+about
+توضیحات گروه
+__________________________________
+setphoto
+تنظیم عکس گروه
+__________________________________
+setname [name]
+تنظیم نام گروه
+__________________________________
+rules
+قوانین گروه
+__________________________________
+id
+نمایش آیدی گروه و آیدی خودتان
+__________________________________
+admin
+نمایش خط قرمز ها برای ادمینی شما در بات
+__________________________________
+nerkh
+نرخ گروه ها
+__________________________________
+help
+لیست دستورات
+__________________________________
+lock [member|name|bots|leave]	
+قفل [member|name|bots|leaveing] 
+__________________________________
+unlock [member|name|bots|leave]
+باز کردن(غیر فعال کردن) [member|name|bots|leaving]
+__________________________________
+set rules <text>
+تنظیم قوانین
+__________________________________
+set about <text>
+تنظیم توضیحات
+__________________________________
+settings
+نمایش تنظیمات گروه
+__________________________________
+newlink
+ساخت لینک جدید
+__________________________________
+link
+دریافت لینک گروه
+__________________________________
+owner
+ نمایش آیدی صاحب گروه
+ __________________________________
+setowner [id]
+تنظیم صاحب گروه
+__________________________________
+setflood [value]
+تنظیم فلوود گروه
+__________________________________
+stats
+نمایش افراد گروه
+__________________________________
+save [value] <text>
+ذخیره متن
+__________________________________
+get [value]
+ارسال متن ذخیره شده
+__________________________________
+clean [modlist|rules|about]
+پاک کردن [modlist|rules|about]
+__________________________________
+res [username]
+نمایش آیدی,نام,یوزر و...
+__________________________________
+log
+نمایش کل اطلاعات گروه
+__________________________________
+__________________________________
+دستورات بات:
+__________________________________
+version
+ورژن بات به همراه توضیحات
+__________________________________
+feedback
+ارسال نظر به سودو بات
+__________________________________
+info
+نمایش تمامی اطلاعات فرد
+__________________________________
+me
+نمایش مقام شما در گروه
+__________________________________
+nerkh
+نمایش نرخ گروه ها و توضیحات
+__________________________________
+insudo
+سودو در گروه ادد میشود و به مشکل شما رسیدگی میکند
+__________________________________
+invite [username]
+دعوت فرد به گروه با یوزرنیم
+__________________________________
+conv [text]
+تبدیل متن به عکس
+__________________________________
+tagall [text]
+تگ کردن پیام به تمامی افراد گروه
+__________________________________
+quran
+لیست سوره هایی از قرآن
+__________________________________
+sura [number]
+نمایش سوره به زبان عربی
+__________________________________
+read [number]
+نمایش فایل صوتی سوره
+__________________________________
+linkpv
+ارسال لینک گروه به پیوی صاحب و یا مدیران
+__________________________________
+all
+نمایش تمامی اطلاعات گروه در یک فایل
+__________________________________
+kickall
+اخراج تمامی افراد ..فقط صاحب گروه میتواند
+__________________________________
+__________________________________
+ از دستور insudo فقط در هنگام بروز مشکل استفاده نمایید
+ کپی ممنوع
+ لطفا در کانال عضو شوید
+ @plusbotteam
 ]]
   }
   serialize_to_file(config, './data/config.lua')
